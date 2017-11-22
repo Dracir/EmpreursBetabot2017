@@ -110,8 +110,10 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="Autonomous Commands" Type="Folder" URL="../Autonomous Commands">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="Autonomous Commands" Type="Folder">
+			<Item Name="MoveCommand.vi" Type="VI" URL="../Autonomous Commands/MoveCommand.vi"/>
+			<Item Name="MoveToDistanceCommand.vi" Type="VI" URL="../Autonomous Commands/MoveToDistanceCommand.vi"/>
+			<Item Name="TurnWithNavxCommand.vi" Type="VI" URL="../Autonomous Commands/TurnWithNavxCommand.vi"/>
 		</Item>
 		<Item Name="Globals" Type="Folder" URL="../Globals">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
